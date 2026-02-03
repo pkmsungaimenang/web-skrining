@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skirining Puskesmas Pedamaran Timur</title>
+    <!-- Font dari Google Fonts (Quicksand & Arimo seperti aslinya) -->
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- VARIABLES & RESET --- */
+        :root {
+            --primary-blue: #02254f;  /* Warna teks utama dari Canva */
+            --accent-green: #7ed957; /* Warna tombol hijau terang dari Canva */
+            --bg-light-blue: #e0f6ff; /* Warna background kotak dari Canva */
+            --white: #ffffff;
+            --text-dark: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arimo', sans-serif;
+            background-color: #f4f9fc;
+            color: var(--primary-blue);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* --- CONTAINER --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(135deg, var(--bg-light-blue) 0%, #ffffff 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* --- VISI MISI & PETIR --- */
+        .about-section {
+            padding: 40px 0;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .section-box {
+            background: var(--bg-light-blue);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .section-box h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: var(--primary-blue);
+        }
+
+        .section-box p, .section-box li {
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .petir-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .petir-item {
+            background: var(--white);
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            color: #0160d9; /* Warna biru PETIR dari aslinya */
+            border: 2px solid #e0f6ff;
+        }
+
+        /* --- FORM LINKS GRID --- */
+        .forms-section {
+            padding: 50px 0;
+        }
+
+        .category-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin: 40px 0 20px;
+            color: var(--primary-blue);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .category-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-green);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .forms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .form-card {
+            background: var(--bg-light-blue);
+            padding: 25px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            border: 1px solid transparent;
+        }
+
+        .form-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: var(--accent-green);
+            background: var(--white);
+        }
+
+        .form-icon {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .form-link {
+            display: block;
+            background-color: var(--accent-green);
+            color: var(--primary-blue);
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 700;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .form-link:hover {
+            background-color: #6bc94a;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .category-title { font-size: 1.5rem; }
+            .forms-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-content">
+            <div class="logo">
+                <i class="fas fa-hospital-user fa-2x"></i>
+                <span>PUSKESMAS PEDAMARAN TIMUR</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h1>SKRINING PUSKESMAS PEDAMARAN TIMUR</h1>
+            <p>"Semangat penuh percaya diri untuk capai tujuan kesehatan"</p>
+        </div>
+    </section>
+
+    <!-- VISI & MISI SECTION -->
+    <section class="about-section">
+        <div class="container">
+            
+            <div class="section-box">
+                <h2>VISI</h2>
+                <p>Terwujudnya pelayanan kesehatan di Puskesmas Pedamaran Timur yang bermutu dan terjangkau, menuju masyarakat yang mandiri dan sejahtera di bidang kesehatan.</p>
+            </div>
+
+            <div class="section-box">
+                <h2>MISI</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle" style="color:var(--accent-green); margin-right:8px;"></i> Meningkatkan pelayanan kesehatan Ibu dan Anak</li>
+                    <li><i class="fas fa-check-circle" style="color:var(--accent-green); margin-right:8px;"></i> Pengendalian penyakit menular dan penyakit tidak menular</li>
+                    <li><i class="fas fa-check-circle" style="color:var(--accent-green); margin-right:8px;"></i> Meningkatkan fasilitas pelayanan kesehatan yang bermutu dan mengembangkan sumber daya manusia yang berkualitas dan professional serta meningkatkan upaya kesehatan berbasis masyarakat</li>
+                </ul>
+            </div>
+
+            <div class="petir-container">
+                <div class="petir-item">Professional</div>
+                <div class="petir-item">Empati</div>
+                <div class="petir-item">Terpadu</div>
+                <div class="petir-item">Inovatif</div>
+                <div class="petir-item">Ramah</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM SKRINING LINKS -->
+    <section class="forms-section">
+        <div class="container">
+
+            <!-- PUSTU -->
+            <h3 class="category-title">FORM SKRINING PUSTU</h3>
+            <div class="forms-grid">
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-blind"></i></div>
+                    <h4>Gangguan Indera</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSZkzdOSv9Ucm9uGYGKs8y55vQEjvbrMq6xy5pIVm9IZ_Ifg/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-lungs-virus"></i></div>
+                    <h4>TB dan IMS</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfj50HC1mUkISTNA28LHuXBVNCi5p_rwUvOCIHyIPAKhuWd4g/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-baby"></i></div>
+                    <h4>TB untuk Anak</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSekAOMyfRLWKNM581ZI0zpyeCxai1OZ-V3ng02soOMjT0p2MA/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-user-friends"></i></div>
+                    <h4>Gangguan Geriatri</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7wabuJiIR1dkBxPaGTNCh9f8_opqjVOh23tXrKMPDi4ErYA/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- KLASTER 2 -->
+            <h3 class="category-title">FORM SKRINING KLASTER 2</h3>
+            <div class="forms-grid">
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-child"></i></div>
+                    <h4>SDQ 4 - 11 Tahun</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-V2BzJJfPmCZMF1FDkd_eM5oYXC3m_1n_ifJ_emZUMSGGVg/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h4>SDQ 11 - 18 Tahun</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_GXBlCSdbRem-JVcxxS7eJB8DR9lYtlPVe35RejsO4EGlWw/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-user-clock"></i></div>
+                    <h4>SRQ > 18 Tahun</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScCXdzqjfpInI7r5jWzHofDgl_naeUl8VS9cpkgVIRcpK5NZA/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- KLASTER 3 -->
+            <h3 class="category-title">FORM SKRINING KLASTER 3</h3>
+            <div class="forms-grid">
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4>Hipertensi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSehjMmmBAWQMV29eCH-i78PQ0pIBUNny8DLLBIk_HZjRYys4w/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-tooth"></i></div>
+                    <h4>Kesehatan Gigi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScMJ8Fwigwx9rE004FFHrEymoiuf5P3Cl3V0lX8vRjt-gmnFw/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-venus"></i></div>
+                    <h4>Kesehatan Reproduksi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4TADXsxhisYGkkh1JUp2rAUQLUE0GHksPsARnpi0P5BXQkw/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-lungs"></i></div>
+                    <h4>Pernafasan</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfy47j8eIo90GY3cQJO1fgah7VyvjqgQXGrU5X7aMKpt-TNqw/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-tint"></i></div>
+                    <h4>Diabetes Melitus</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfua5v0neCKr_if7v3oCjM_W08KRKSS57Hja4mSv8ZQBPcipg/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+             <!-- LINTAS KLASTER -->
+             <h3 class="category-title">FORM SKRINING LINTAS KLASTER</h3>
+             <div class="forms-grid" style="justify-content: center;">
+                 <div class="form-card" style="max-width: 300px;">
+                    <div class="form-icon"><i class="fas fa-teeth-open"></i></div>
+                    <h4>Kesehatan Gigi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScMJ8Fwigwx9rE004FFHrEymoiuf5P3Cl3V0lX8vRjt-gmnFw/viewform?usp=sf_link" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+             </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <h3>PUSKESMAS PEDAMARAN TIMUR</h3>
+            <p>Melayani dengan Sepenuh Hati</p>
+            <p style="margin-top: 10px;">&copy; 2023 Puskesmas Pedamaran Timur.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
