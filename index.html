@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skrining Puskesmas Sungai Menang</title>
     
-    <!-- 1. FAVICON SLOT -->
-    <!-- Pastikan kamu punya file bernama 'favicon.ico' di folder yang sama -->
+    <!-- FAVICON SLOT -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Font dari Google Fonts (Quicksand & Arimo) -->
@@ -82,9 +81,8 @@
             gap: 10px;
         }
 
-        /* Styling khusus untuk Logo Gambar */
         .logo img {
-            height: 50px; /* Ukuran logo diubah jadi 50px agar lebih jelas */
+            height: 50px;
             width: auto;
             object-fit: contain;
         }
@@ -254,9 +252,7 @@
     <header>
         <div class="container nav-content">
             <div class="logo">
-                <!-- 2. LOGO SLOT -->
-                <!-- Ganti src="logo1.png" dengan nama file logomu jika beda -->
-                <img src="logo.png" alt="Logo Puskesmas Sungai Menang">
+                <img src="logo1.png" alt="Logo Puskesmas Sungai Menang">
                 <span>PUSKESMAS SUNGAI MENANG</span>
             </div>
         </div>
@@ -308,71 +304,259 @@
             <!-- PUSTU -->
             <h3 class="category-title">FORM SKRINING PUSTU</h3>
             <div class="forms-grid">
+                <!-- Gangguan Indera -->
                 <div class="form-card">
                     <div class="form-icon"><i class="fas fa-blind"></i></div>
                     <h4>Gangguan Indera</h4>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScdLXiUoPPYciDWbK22UUVCvVuR2dcSb1IVRHdhPHnLHYfdSw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <!-- Gangguan Geriatri -->
                 <div class="form-card">
-                    <div class="form-icon"><i class="fas fa-lungs-virus"></i></div>
-                    <h4>TB dan IMS</h4>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1cswSrb1K4Kah_w8fn7H6LlbQQafdV07nBQo8bS4H1fcvWQ/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                    <div class="form-icon"><i class="fas fa-person-cane"></i></div>
+                    <h4>Gangguan Geriatri</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3KyRcVmZ-TEu63oDTimbeWsND0TVxUu3U5dOu-SqQzwIOIA/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <!-- TB pada Anak -->
                 <div class="form-card">
                     <div class="form-icon"><i class="fas fa-baby"></i></div>
                     <h4>TB pada Anak</h4>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTntDi914Yz7pOcQcSi8dxokobQIKfjHxWsLgNfPhi3WuD_A/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <!-- TB pada Ibu Hamil -->
                 <div class="form-card">
-                    <div class="form-icon"><i class="fas fa-user-friends"></i></div>
-                    <h4>Gangguan Geriatri</h4>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3KyRcVmZ-TEu63oDTimbeWsND0TVxUu3U5dOu-SqQzwIOIA/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                    <div class="form-icon"><i class="fas fa-person-pregnant"></i></div>
+                    <h4>TB pada Ibu Hamil</h4>
+                    <!-- GANTI LINK DI BAWAH INI -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdLXiUoPPYciDWbK22UUVCvVuR2dcSb1IVRHdhPHnLHYfdSw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Hipotiroid Kongenital (SHK) -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-notes-medical"></i></div>
+                    <h4>Hipotiroid Kongenital (SHK)</h4>
+                    <!-- GANTI LINK DI BAWAH INI -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdLXiUoPPYciDWbK22UUVCvVuR2dcSb1IVRHdhPHnLHYfdSw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- TB dan IMS -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-lungs-virus"></i></div>
+                    <h4>TB dan IMS</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1cswSrb1K4Kah_w8fn7H6LlbQQafdV07nBQo8bS4H1fcvWQ/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- PUMA -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-lungs"></i></div>
+                    <h4>PUMA</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScKjjzcXz0BAGpVVyqogCbvL0v0jK8lmktCRPJkVabe7Pknpg/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Rokok dan Napza -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-smoking"></i></div>
+                    <h4>Rokok dan Napza</h4>
+                    <!-- GANTI LINK DI BAWAH INI -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdLXiUoPPYciDWbK22UUVCvVuR2dcSb1IVRHdhPHnLHYfdSw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- SRQ >18 Tahun -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-user-clock"></i></div>
+                    <h4>SRQ > 18 Tahun</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDAcrjL_hFipVY5tmIxeqIo2wW8P-lYoGtQ0RUaWD2H7eQgg/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- SRQ Ibu Hamil -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-heart-pulse"></i></div>
+                    <h4>SRQ Ibu Hamil</h4>
+                    <!-- GANTI LINK DI BAWAH INI -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdLXiUoPPYciDWbK22UUVCvVuR2dcSb1IVRHdhPHnLHYfdSw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- SDQ 4-11 Tahun -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-child"></i></div>
+                    <h4>SDQ 4 - 11 Tahun</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScDkFmzhCw1GTqTn_t8pGxrcRvTbLBxdmLpfPMkagt-H0tSAA/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- SDQ 11-18 Tahun -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h4>SDQ 11 - 18 Tahun</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiIfE-H8aFmvz0ARVcTmxmdHEHbXKDEv8GMNP_jJiS5Snm4w/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Kesehatan Reproduksi -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-venus-mars"></i></div>
+                    <h4>Kesehatan Reproduksi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScHzJSJiG5s3WdK3MvSO86o1yL_SgKktjpifaNK5uomWNZX2g/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Kesehatan Gigi -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-tooth"></i></div>
+                    <h4>Kesehatan Gigi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfV0msn1K5otFcIRbAMmSRo2VvO055bKkdmVMWx3EVMPqwCtg/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Hipertensi -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4>Hipertensi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZOHJ03laJGyZWJwpeBzCSwJOKAnLOAbb83LDbc80X6JfrZw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Diabetes Melitus -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-tint"></i></div>
+                    <h4>Diabetes Melitus</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyWfWrrQLqlBi3ohCrhYLTnJcjB666A2QOhsQVxFXEeFshig/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <!-- KLASTER 2 -->
             <h3 class="category-title">FORM SKRINING KLASTER 2</h3>
             <div class="forms-grid">
+                <!-- TB pada Anak -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-baby"></i></div>
+                    <h4>TB pada Anak</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTntDi914Yz7pOcQcSi8dxokobQIKfjHxWsLgNfPhi3WuD_A/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- TB pada Ibu Hamil -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-person-pregnant"></i></div>
+                    <h4>TB pada Ibu Hamil</h4>
+                    <!-- GANTI LINK DI BAWAH INI -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdLXiUoPPYciDWbK22UUVCvVuR2dcSb1IVRHdhPHnLHYfdSw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Hipotiroid Kongenital (SHK) -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-notes-medical"></i></div>
+                    <h4>Hipotiroid Kongenital (SHK)</h4>
+                    <!-- GANTI LINK DI BAWAH INI -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdLXiUoPPYciDWbK22UUVCvVuR2dcSb1IVRHdhPHnLHYfdSw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Gangguan Indera -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-blind"></i></div>
+                    <h4>Gangguan Indera</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdLXiUoPPYciDWbK22UUVCvVuR2dcSb1IVRHdhPHnLHYfdSw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- TB dan IMS -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-lungs-virus"></i></div>
+                    <h4>TB dan IMS</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1cswSrb1K4Kah_w8fn7H6LlbQQafdV07nBQo8bS4H1fcvWQ/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- PUMA -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-lungs"></i></div>
+                    <h4>PUMA</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScKjjzcXz0BAGpVVyqogCbvL0v0jK8lmktCRPJkVabe7Pknpg/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Rokok dan Napza -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-smoking"></i></div>
+                    <h4>Rokok dan Napza</h4>
+                    <!-- GANTI LINK DI BAWAH INI -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdLXiUoPPYciDWbK22UUVCvVuR2dcSb1IVRHdhPHnLHYfdSw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- SRQ >18 Tahun -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-user-clock"></i></div>
+                    <h4>SRQ > 18 Tahun</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDAcrjL_hFipVY5tmIxeqIo2wW8P-lYoGtQ0RUaWD2H7eQgg/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- SRQ Ibu Hamil -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-heart-pulse"></i></div>
+                    <h4>SRQ Ibu Hamil</h4>
+                    <!-- GANTI LINK DI BAWAH INI -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdLXiUoPPYciDWbK22UUVCvVuR2dcSb1IVRHdhPHnLHYfdSw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- SDQ 4-11 Tahun -->
                 <div class="form-card">
                     <div class="form-icon"><i class="fas fa-child"></i></div>
                     <h4>SDQ 4 - 11 Tahun</h4>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScDkFmzhCw1GTqTn_t8pGxrcRvTbLBxdmLpfPMkagt-H0tSAA/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <!-- SDQ 11-18 Tahun -->
                 <div class="form-card">
                     <div class="form-icon"><i class="fas fa-user-graduate"></i></div>
                     <h4>SDQ 11 - 18 Tahun</h4>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiIfE-H8aFmvz0ARVcTmxmdHEHbXKDEv8GMNP_jJiS5Snm4w/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <!-- Kesehatan Reproduksi -->
                 <div class="form-card">
-                    <div class="form-icon"><i class="fas fa-user-clock"></i></div>
-                    <h4>SRQ > 18 Tahun</h4>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDAcrjL_hFipVY5tmIxeqIo2wW8P-lYoGtQ0RUaWD2H7eQgg/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                    <div class="form-icon"><i class="fas fa-venus-mars"></i></div>
+                    <h4>Kesehatan Reproduksi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScHzJSJiG5s3WdK3MvSO86o1yL_SgKktjpifaNK5uomWNZX2g/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Kesehatan Gigi -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-tooth"></i></div>
+                    <h4>Kesehatan Gigi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfV0msn1K5otFcIRbAMmSRo2VvO055bKkdmVMWx3EVMPqwCtg/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Hipertensi -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4>Hipertensi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZOHJ03laJGyZWJwpeBzCSwJOKAnLOAbb83LDbc80X6JfrZw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
 
             <!-- KLASTER 3 -->
             <h3 class="category-title">FORM SKRINING KLASTER 3</h3>
             <div class="forms-grid">
+                <!-- Gangguan Geriatri -->
                 <div class="form-card">
-                    <div class="form-icon"><i class="fas fa-heartbeat"></i></div>
-                    <h4>Hipertensi</h4>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZOHJ03laJGyZWJwpeBzCSwJOKAnLOAbb83LDbc80X6JfrZw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                    <div class="form-icon"><i class="fas fa-person-cane"></i></div>
+                    <h4>Gangguan Geriatri</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3KyRcVmZ-TEu63oDTimbeWsND0TVxUu3U5dOu-SqQzwIOIA/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <!-- SRQ >18 Tahun -->
                 <div class="form-card">
-                    <div class="form-icon"><i class="fas fa-tooth"></i></div>
-                    <h4>Kesehatan Gigi</h4>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfV0msn1K5otFcIRbAMmSRo2VvO055bKkdmVMWx3EVMPqwCtg/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                    <div class="form-icon"><i class="fas fa-user-clock"></i></div>
+                    <h4>SRQ > 18 Tahun</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDAcrjL_hFipVY5tmIxeqIo2wW8P-lYoGtQ0RUaWD2H7eQgg/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <!-- TB dan IMS -->
                 <div class="form-card">
-                    <div class="form-icon"><i class="fas fa-venus"></i></div>
-                    <h4>Kesehatan Reproduksi</h4>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScHzJSJiG5s3WdK3MvSO86o1yL_SgKktjpifaNK5uomWNZX2g/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                    <div class="form-icon"><i class="fas fa-lungs-virus"></i></div>
+                    <h4>TB dan IMS</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1cswSrb1K4Kah_w8fn7H6LlbQQafdV07nBQo8bS4H1fcvWQ/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <!-- PUMA -->
                 <div class="form-card">
                     <div class="form-icon"><i class="fas fa-lungs"></i></div>
                     <h4>PUMA</h4>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScKjjzcXz0BAGpVVyqogCbvL0v0jK8lmktCRPJkVabe7Pknpg/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <!-- SDQ 4-11 Tahun -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-child"></i></div>
+                    <h4>SDQ 4 - 11 Tahun</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScDkFmzhCw1GTqTn_t8pGxrcRvTbLBxdmLpfPMkagt-H0tSAA/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- SDQ 11-18 Tahun -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h4>SDQ 11 - 18 Tahun</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiIfE-H8aFmvz0ARVcTmxmdHEHbXKDEv8GMNP_jJiS5Snm4w/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Kesehatan Reproduksi -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-venus-mars"></i></div>
+                    <h4>Kesehatan Reproduksi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScHzJSJiG5s3WdK3MvSO86o1yL_SgKktjpifaNK5uomWNZX2g/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Kesehatan Gigi -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-tooth"></i></div>
+                    <h4>Kesehatan Gigi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfV0msn1K5otFcIRbAMmSRo2VvO055bKkdmVMWx3EVMPqwCtg/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Hipertensi -->
+                <div class="form-card">
+                    <div class="form-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4>Hipertensi</h4>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZOHJ03laJGyZWJwpeBzCSwJOKAnLOAbb83LDbc80X6JfrZw/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Diabetes Melitus -->
                 <div class="form-card">
                     <div class="form-icon"><i class="fas fa-tint"></i></div>
                     <h4>Diabetes Melitus</h4>
@@ -386,6 +570,7 @@
                  <div class="form-card" style="max-width: 300px;">
                     <div class="form-icon"><i class="fas fa-teeth-open"></i></div>
                     <h4>Kesehatan Gigi</h4>
+                    <!-- Link sama dengan yang lain -->
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfV0msn1K5otFcIRbAMmSRo2VvO055bKkdmVMWx3EVMPqwCtg/viewform?usp=dialog" target="_blank" class="form-link">Isi Skrining <i class="fas fa-arrow-right"></i></a>
                 </div>
              </div>
@@ -398,7 +583,6 @@
         <div class="container">
             <h3>PUSKESMAS SUNGAI MENANG</h3>
             <p>Kesehatan Anda adalah Prioritas Kami</p>
-            <!-- PERUBAHAN DI SINI -->
             <p style="margin-top: 10px;">
                 &copy; 2026 By: <a href="https://wa.me/6281277777454" target="_blank" style="color: white; text-decoration: underline;">Wahyu Sandy Hidayatullah</a>
             </p>
@@ -406,6 +590,4 @@
     </footer>
 
 </body>
-
 </html>
-
