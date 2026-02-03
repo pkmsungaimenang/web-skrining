@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skirining Puskesmas Sungai Menang</title>
-    <!-- Font dari Google Fonts (Quicksand & Arimo seperti aslinya) -->
+    <title>Skrining Puskesmas Sungai Menang</title>
+    
+    <!-- 1. FAVICON SLOT -->
+    <!-- Pastikan kamu punya file bernama 'favicon.ico' di folder yang sama -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <!-- Font dari Google Fonts (Quicksand & Arimo) -->
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     <!-- Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,9 +17,9 @@
     <style>
         /* --- VARIABLES & RESET --- */
         :root {
-            --primary-blue: #02254f;  /* Warna teks utama dari Canva */
-            --accent-green: #7ed957; /* Warna tombol hijau terang dari Canva */
-            --bg-light-blue: #e0f6ff; /* Warna background kotak dari Canva */
+            --primary-blue: #02254f;
+            --accent-green: #7ed957;
+            --bg-light-blue: #e0f6ff;
             --white: #ffffff;
             --text-dark: #333333;
         }
@@ -77,8 +82,11 @@
             gap: 10px;
         }
 
+        /* Styling khusus untuk Logo Gambar */
         .logo img {
-            height: 40px;
+            height: 50px; /* Ukuran logo diubah jadi 50px agar lebih jelas */
+            width: auto;
+            object-fit: contain;
         }
 
         /* --- HERO SECTION --- */
@@ -140,7 +148,7 @@
             border-radius: 50px;
             font-weight: 700;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            color: #0160d9; /* Warna biru PETIR dari aslinya */
+            color: #0160d9;
             border: 2px solid #e0f6ff;
         }
 
@@ -246,7 +254,9 @@
     <header>
         <div class="container nav-content">
             <div class="logo">
-                <i class="fas fa-hospital-user fa-2x"></i>
+                <!-- 2. LOGO SLOT -->
+                <!-- Ganti src="logo.png" dengan nama file logomu jika beda -->
+                <img src="logo.png" alt="Logo Puskesmas Sungai Menang">
                 <span>PUSKESMAS SUNGAI MENANG</span>
             </div>
         </div>
@@ -393,9 +403,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
